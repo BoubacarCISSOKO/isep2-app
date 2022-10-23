@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
+use App\Models\Categorie;
+use App\Models\Marque;
+use Illuminate\Support\Str;
+use Auth;
+
 
 class HomeController extends Controller
 {
@@ -11,10 +17,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,6 +29,25 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $articles = Article::orderBy('created_at', 'desc');
+        $articles = $articles->paginate(15);
+        return view('home', compact("articles"));
+    }
+
+    public function admindashbord()
+    {
+        $products = Article::orderBy('created_at', 'desc');
+        $products = $products->paginate(15);
+        return view("admin.template", compact("products"));
+    }
+
+    public function product($id)
+    {
+        $product  = Article::where('id', $id)->first();
+        if($product!=null){
+            //updateCartSetup();
+            return view('detailsproduits', compact('product'));
+        }
+        abort(404); 
     }
 }

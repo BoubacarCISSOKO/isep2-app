@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Article;
 use App\Models\Categorie;
-use App\Models\Souscategorie;
+
 use App\Models\Marque;
 
 use Intervention\Image\Facades\Image as Image;
@@ -38,8 +38,7 @@ class ArticlesController extends Controller
         //
         $categories = Categorie::all(); 
         $marques = Marque::all();
-        $souscategories = Souscategorie::all();
-        return view('articles.create', compact('categories','marques','souscategories'));
+        return view('articles.create', compact('categories','marques'));
     }
 
     /**
