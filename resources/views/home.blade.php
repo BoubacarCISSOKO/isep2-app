@@ -93,7 +93,7 @@
     <!-- Featured End -->
 
      <!-- Footer Start -->
-     <div class="container-fluid bg-secondary mt-1 pt-1">
+     <div class="container-fluid bg-secondary mt-1 pt-1" style="background-color: #4a4909 !important;">
         <div class="row border-top border-light mx-xl-5 py-4">
             <div class="col-md-6 px-xl-0">
                 <p class="mb-md-0 text-center text-md-left">

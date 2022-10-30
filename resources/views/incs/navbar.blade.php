@@ -56,7 +56,7 @@
 <!-- Navbar Start -->
 <div class="container-fluid mb-5">
     <div class="row border-top px-xl-5">
-        <div class="col-lg-3 d-none d-lg-block">
+        <div class="col-lg-3 d-none d-lg-block" >
             <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
                 <h6 class="m-0 text-white">Categories</h6>
                 <i class="fa fa-angle-down text-white"></i>
@@ -107,7 +107,7 @@
                         <img class="img-fluid" src="{{url('images/1 (3).png')}}" alt="Image">
                         <div class="carousel-caption d-flex flex-column justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h4 class="text-light text-uppercase font-weight-medium mb-3">Votre boutique</h4>
+                                <h4 class="text-light text-uppercase font-weight-medium mb-3">Votre cometique</h4>
                                 <h3 class="display-4 text-white font-weight-semi-bold mb-4">ouverte 7j/7j</h3>
                                 <a href="" class="btn btn-light py-2 px-3">Et 24H/24H</a>
                             </div>
@@ -117,9 +117,9 @@
                         <img class="img-fluid" src="{{url('images/1 (2).png')}}" alt="Image">
                         <div class="carousel-caption d-flex flex-column justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h4 class="text-light text-uppercase font-weight-medium mb-3">Le numérique au service</h4>
-                                <h3 class="display-4 text-white font-weight-semi-bold mb-4">de la jeunesse</h3>
-                                <a href="" class="btn btn-light py-2 px-3">Ressourçons-nous!</a>
+                                <h4 class="text-light text-uppercase font-weight-medium mb-3">Ici la qualité</h4>
+                                <h3 class="display-4 text-white font-weight-semi-bold mb-4">de la peau</h3>
+                                <a href="" class="btn btn-light py-2 px-3">Ressourcez-vous!</a>
                             </div>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                         <div class="carousel-caption d-flex flex-column justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h4 class="text-light text-uppercase font-weight-medium mb-3">Tellement beau</h4>
-                                <h3 class="display-4 text-white font-weight-semi-bold mb-4">pour la jeunesse</h3>
-                                <a href="" class="btn btn-light py-2 px-3">Ressourçons-nous!</a>
+                                <h3 class="display-4 text-white font-weight-semi-bold mb-4">pour toute personne</h3>
+                                <a href="" class="btn btn-light py-2 px-3">Merci de votre ..</a>
                             </div>
                         </div>
                     </div>
