@@ -52,8 +52,8 @@ class ArticlesController extends Controller
         //
 
         $article = new Article;
-        $article->nom = $request->nom;
-        $article->prix = $request->prix;
+        $article->name = $request->name;
+        $article->price = $request->price;
         $article->categorie_id = $request->categorie_id;
         $article->marque_id = $request->marque_id;
         $article->description = $request->description;

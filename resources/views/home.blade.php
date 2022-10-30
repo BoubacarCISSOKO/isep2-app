@@ -31,7 +31,7 @@
                                 <img class="margin-right-15 width-hight" width="95" height="95" align="left" src="{{url('images/articles/'.$article->photo)}}"
                                 title="#">
                             </a>
-                            <p> {{$article->prix}} fcfa</p>
+                            <p> {{$article->price}} fcfa</p>
                         </blockquote>
                     </div>
                 </div>

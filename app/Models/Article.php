@@ -13,6 +13,7 @@ class Article extends Model
         'name',
         'price',
         'categorie_id',
+        'souscategorie_id',
         'marque_id',
         'photo',
         'description',
@@ -21,10 +22,10 @@ class Article extends Model
           return $this->belongsTo(Categorie::class,'categorie_id');  
        }
   
+    
   
      public function marques(){
         return $this->belongsTo(Marque::class, 'marque_id');
      }
-
 
 }

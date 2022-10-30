@@ -15,8 +15,8 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
-            $table->decimal('prix');
+            $table->string('name');
+            $table->decimal('price');
             $table->unsignedBigInteger('categorie_id');
             $table->foreign('categorie_id')->references('id')->on('categories')->onDelete('cascade')->default('null');
             $table->unsignedBigInteger('marque_id');

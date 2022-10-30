@@ -38,7 +38,7 @@
                 <div class="form-group row">
                     <div class="col col-6">
                         <label for="inputName">Nom</label>
-                        <input  style="border: 1px solid black;" type="text" id="inputName" class="form-control @error('nom') is-danger @enderror" name="nom" value="{{ old('nom') }}">
+                        <input  style="border: 1px solid black;" type="text" id="inputName" class="form-control @error('name') is-danger @enderror" name="name" value="{{ old('name') }}">
                         @error('name')
                           <p class="help is-danger">{{ $message }}</p>
                         @enderror
@@ -46,7 +46,7 @@
                     </div>
                     <div class="col col-6">
                         <label for="inputName">Prix</label>
-                        <input  style="border: 1px solid black;" type="text" id="inputName" class="form-control @error('price') is-danger @enderror" name="prix" value="{{ old('prix') }}">
+                        <input  style="border: 1px solid black;" type="text" id="inputName" class="form-control @error('price') is-danger @enderror" name="price" value="{{ old('price') }}">
                         @error('price')
                           <p class="help is-danger">{{ $message }}</p>
                         @enderror

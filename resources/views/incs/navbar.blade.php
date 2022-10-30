@@ -45,7 +45,7 @@
         <div class="col-lg-3 col-6 text-right">
             <a href="" class="btn border">
             <img class="img-fluid" src="{{url('images/icon-cart.png')}}" width="30px" height="30px" alt="Image">
-                <span class="badge" style="margin-top:-10px !important">Panier</span>
+            <span class="badge" style="margin-top:-10px !important,"> {{ Cart::getTotalQuantity()}} Panier</span>
             </a>
         </div>
     </div>
