@@ -69,22 +69,18 @@
                         <a href="#" class="nav-item nav-link">Livres</a>
                     </div>
                     <div class="navbar-nav ml-auto py-0">
-                        @if (Auth::user())
-                          @if (Auth::user()->role === 'ADMIN')
-                        
-                            <a class="nav-item nav-link" href="{{ route('dashboard')}}">Espace Admin</a>
-                    
-                          @endif
-                      
-                            <form method='POST' action="{{ route('logout')}}">
-                              @csrf
-                              <button type="submit" class="btn">Déconnexion</button>
-                            </form>
-                  
-                          @else
-                        
-                            <a class="nav-item nav-link" href="{{ route('login')}}">Me connecter</a>
+                    @if (Route::has('login'))
+                            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                                @auth
+                                    <a href="{{ url('/compte') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profil</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Se connecter</a>
 
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">S'inscrire</a>
+                                    @endif
+                                @endauth
+                            </div>
                         @endif
 
                     </div>
